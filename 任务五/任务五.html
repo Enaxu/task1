@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="zh-CN" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="" />
+	<link rel="stylesheet" href="style/.css" type="text/css" />
+	<style type="text/css">
+		body{
+			font-family:Miscrosoft yahei;
+			font-size:15px;
+			margin:0;
+			padding:0;
+			background-color:#e6e6f2;
+		}
+		
+		#header,#footer{height:80px; background-color:#000;}
+		
+		#header h1{display:inline-block; color:white;}
+		
+		#header ul{
+			display:inline-block;
+			float:right;
+			padding-right:15px;
+			padding-top:12px;
+		}
+		
+		#header ul li{
+			display:inline-block;
+			padding-left:20px;
+			color:red;
+		}
+		
+		#header ul li a{color:white;}
+		
+		.content{
+			margin:25px 455px 25px 15px;
+			box-shadow:2px 2px 5px #4f4f4f;
+            padding:28px 20px 30px 20px;
+			background-color:#fff;	
+		}
+
+		dd{
+			border:1px solid #999999;
+			text-align:center;
+			margin:20px 50px;
+			padding:20px 5px 15px;
+			width:260px;	
+		}
+		.clearfix:before,.clearfix:after{
+			content:".";
+			display:block;
+			height:0;
+			overflow:hidden;
+		}
+		.clearfix:after{clear:both;}
+		.clearfix{zoom:1;}
+		dd .picture{padding-top:10px;}
+		.picture{float:left; width:216px;}
+		
+		.writer{color:#666666}
+		
+		table{
+			border-collapse:collapse;
+			width:99%;
+			border:#9D9D9D;
+		}
+		
+		th{background-color:#5b5b5b; color:#fff7ff;}
+		
+		.biaowei{background:#9D9D9D;}
+		
+		form{text-align:center;}
+		
+		.left{text-align:right; padding-right:15px;}
+		
+		.tishi{
+			color:#bdbbbc;
+			font-size:13px;
+			text-align:left;
+			padding-bottom:15px;
+			padding-top:10px;
+		}
+		
+		.right{text-align:left;}
+		
+		.handin{
+			width:100%;
+			margin-top:10px;
+			padding-top:8px;
+			padding-bottom:8px;
+			background:#4a4aff;
+			color:#fff;
+			font-size:16px;
+			border-radius:10px;
+		}
+		
+		form{margin:0 auto;}
+		
+		#footer{
+			color:#fff;
+			text-align:center;
+			font-size:12px;
+			padding-top:20px;
+		}
+		
+		.special{
+			float:right;
+			width:380px;
+			margin-right:15px;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1 class="writer">网站一级标题</h1>
+		<ul>
+			<li><a href="#content1">导航链接一</a></li>
+			<li><a href="#content2">导航链接二</a></li>
+			<li><a href="#content3">导航链接三</a></li>
+			<li><a href="#content4">导航链接四</a></li>
+		</ul>
+	</div>
+	
+	<div class="content special">
+			<h2><a name="content4">这里以后是一个侧栏，这是侧栏的标题</a></h2>
+			<h2>侧栏注册窗口标题</h2>
+			<form>
+				<table>
+					<tr>
+						<td class="left"><label for="email">请输入邮箱地址</label></td>
+						<td class="right"><input type="text" id="email" value="这是一个文本输入框" /></td>
+					</tr>
+					<tr>
+						<td></td><td class="tishi">邮箱地址请按要求格式输入</td>
+					</tr>
+					<tr>
+						<td class="left"><label for="mima1">请输入密码</label></td>
+						<td class="right"><input type="passward" id="mima1"  /></td>
+					</tr>
+					<tr>
+						<td class="left"><label for="mima2">请重复输入密码</label></td>
+						<td class="right"><input type="passward" id="mima2" /></td>
+					</tr>
+					<tr>
+						<td></td><<td class="tishi">密码请为6-16位英文数字</td>
+					</tr>
+					<tr>
+						<td class="left">性别</td></td>
+						<td class="right"><input type="radio"  name="sex"  value="男"  checked="checked" />男
+						<input type="radio"  name="sex"  value="女" />女</td>
+					</tr>
+					<tr>
+						<td class="left">城市</td>
+						<td class="right">
+							<select>
+							<option value="beijing">北京</option>
+							<option value="shanghai">上海</option>
+							<option value="nanjing">南京</option>
+							<option value="chengdu">成都</option>
+							<option value="hangzhou">杭州</option>
+							<option value="guangdong">广东</option>
+						</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="left">爱好</td>
+						<td class="right">
+							<input type="checkbox"  name="hobby"  value="运动" />运动
+							<input type="checkbox"  name="hobby"  value="艺术" />艺术
+							<input type="checkbox"  name="hobby"  value="科学" />科学
+						</td>
+					</tr>
+					<tr>
+						<td class="left">个人描述</td>
+						<td class="right"><textarea  rows="5"  cols="20">这是一个多行输入框，输入您的个人描述</textarea></td>
+					</tr>
+				</table>		
+				<input class="handin" type="submit"  value="确认提交" />
+		</form>
+	</div>
+	
+	<div id="mainbody">
+		<div class="content">
+			<h2><a name="content1">文章一级标题</a></h2>
+			<h2 class="writer">文章二级标题</h2>
+			<div class="writer">文章作者&nbsp;&nbsp;文章发表时间</div>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+			<div class="picture">
+					<img src="千玺啊.jpeg"  alt="千玺" title="帅玺子" width="216px" height="324px" margin-left:"1000px"/>
+			</div>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接点击打开后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+		</div>
+		<div class="content">
+			<h2><a name="content2">另一篇文章一级标题</a></h2>
+			<h2 class="writer">文章二级标题</h2>
+			<div class="writer">文章作者&nbsp;&nbsp;文章发表时间</div>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有一个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+			<div><img src="千玺啊.jpeg"  alt="千玺" title="帅玺子" width="216px" height="324px"/></div>	
+			<ul>
+				<li>列表项目一</li>
+				<li>列表项目二</li>
+				<li>列表项目三</li>
+			</ul>
+			<dl>
+				<dt><h2>图片</h2></dt>
+				<dd class="clearfix">好看的图片
+					<div class="picture">
+					<img src="千玺啊.jpeg"  alt="千玺" title="帅玺子" width="216px" height="324px" />
+					</div>
+				</dd>
+				<dd class="clearfix">好看的图片
+					<div class="picture">
+					<img src="千玺啊.jpeg"  alt="千玺" title="帅玺子" width="216px" height="324px" />
+					</div>
+				</dd>
+				<dd class="clearfix">好看的图片
+					<div class="picture">
+					<img src="千玺啊.jpeg"  alt="千玺" title="帅玺子" width="216px" height="324px" />
+					</div>
+				</dd>
+				<dd class="clearfix">好看的图片
+					<div class="picture">
+					<img src="千玺啊.jpeg"  alt="千玺" title="帅玺子" width="216px" height="324px" />
+					</div>
+				</dd>
+				<dd class="clearfix">好看的图片
+					<div class="picture">
+					<img src="千玺啊.jpeg"  alt="千玺" title="帅玺子" width="216px" height="324px" />
+					</div>
+				</dd>
+				<dd class="clearfix">好看的图片
+					<div class="picture">
+					<img src="千玺啊.jpeg"  alt="千玺" title="帅玺子" width="216px" height="324px" />
+					</div>
+				</dd>
+				<dd class="clearfix">好看的图片
+					<div class="picture">
+					<img src="千玺啊.jpeg"  alt="千玺" title="帅玺子" width="216px" height="324px" />
+					</div>
+				</dd>
+				<dd class="clearfix">好看的图片
+					<div class="picture">
+					<img src="千玺啊.jpeg"  alt="千玺" title="帅玺子" width="216px" height="324px" />
+					</div>
+				</dd>
+				<dd class="clearfix">好看的图片
+					<div class="picture">
+					<img src="千玺啊.jpeg"  alt="千玺" title="帅玺子" width="216px" height="324px" />
+					</div>
+				</dd>
+				<dd class="clearfix">好看的图片
+					<div class="picture">
+					<img src="千玺啊.jpeg"  alt="千玺" title="帅玺子" width="216px" height="324px" />
+					</div>
+				</dd>
+			</dl>		
+		</div>
+		<div class="content">
+			<h2><a name="content3">最后一篇文章一级标题</a></h2>
+			<h2 class="writer">文章二级标题</h2>
+			<div class="writer">文章作者&nbsp;&nbsp;文章发表时间</div>
+			<ol>
+				<li>排名1</li>
+				<li>排名2</li>
+				<li>排名3</li>
+			</ol>
+			<p>下面是一个表格，给表格加了一个border=“1”好让你看出是一个表格</p>
+			<table border="1">
+				<thead>
+					<tr>
+						<th align="left">表头</th>
+						<th align="left">表头</th>
+						<th align="left">表头</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#content1">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#content2">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#content3">操作</a></td>
+					</tr>
+					<tr>
+						<td>表内容单元格</td>
+						<td>表内容单元格</td>
+						<td><a href="#content4">操作</a></td>
+					</tr>
+					<tr class="biaowei">
+						<td align="left">总计</td>
+						<td colspan="2" align="left">1000</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+	<div id="footer">
+
+		版权所有&copyEnaxu
+	</div>
+</body>
+</html>
